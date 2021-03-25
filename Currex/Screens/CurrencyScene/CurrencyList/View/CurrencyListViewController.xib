@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyListViewController" customModule="Currex" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="0bJ-8c-tug" id="KLx-aB-Lgw"/>
+                <outlet property="activityIndicatorContainerView" destination="INz-qz-doB" id="DbJ-Ka-Y1T"/>
+                <outlet property="currencyConverterView" destination="Ifq-es-Otu" id="t2Y-Y4-ahb"/>
+                <outlet property="tableView" destination="TAK-zD-PYV" id="3Ag-LZ-DNk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WCA-CD-j1a">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifq-es-Otu" customClass="CurrencyConverterContainerView" customModule="Currex" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="JkS-rL-ltJ"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TAK-zD-PYV" customClass="BaseTableView" customModule="Currex" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="414" height="658"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INz-qz-doB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0bJ-8c-tug">
+                            <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0bJ-8c-tug" firstAttribute="centerY" secondItem="INz-qz-doB" secondAttribute="centerY" id="abW-ta-JSc"/>
+                        <constraint firstItem="0bJ-8c-tug" firstAttribute="centerX" secondItem="INz-qz-doB" secondAttribute="centerX" id="xpS-i9-dUF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="INz-qz-doB" secondAttribute="bottom" id="FuF-o5-pbB"/>
+                <constraint firstItem="INz-qz-doB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ird-mV-Igb"/>
+                <constraint firstItem="WCA-CD-j1a" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ntc-yU-OMp"/>
+                <constraint firstItem="WCA-CD-j1a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SE4-v0-GLS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="INz-qz-doB" secondAttribute="trailing" id="TRP-rN-DUG"/>
+                <constraint firstItem="INz-qz-doB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hcc-8e-J4t"/>
+                <constraint firstItem="WCA-CD-j1a" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="nca-q6-TN9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WCA-CD-j1a" secondAttribute="trailing" id="vcv-1U-dc4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="-197.10144927536234" y="131.91964285714286"/>
+        </view>
+    </objects>
+</document>

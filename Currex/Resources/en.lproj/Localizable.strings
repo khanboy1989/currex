@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Currex
+
+  Created by Serhan Khan on 29/01/2021.
+  
+*/
+
+"exchangeRates" = "Exchange Rates";
+"zeroZero" = "0.0";

@@ -1,0 +1,10 @@
+hello: world
+weight: 33.3
+foo:
+  bar: banana
+  baz: orange
+car: null
+names:
+  - John
+  - Peter
+  - Nick
