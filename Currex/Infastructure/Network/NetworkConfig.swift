@@ -17,7 +17,6 @@ public protocol NetworkConfigurable{
 
 //MARK: - ApiDataNetworkConfig
 public struct ApiDataNetworkConfig:NetworkConfigurable{
-    
     public var baseURL: URL
     public var headers: [String : String]
     public var queryParameters: [String : String]

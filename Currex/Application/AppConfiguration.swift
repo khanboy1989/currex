@@ -11,7 +11,7 @@ import Foundation
 final class AppConfiguration{
     
     lazy var apiBaseURL: String = {
-        guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "ApiBaseURL") as? String else {
+        guard let apiBaseURL = PlistFiles.apiBaseURL.nullify else {
             fatalError("ApiBaseURL must not be empty in plist")
         }
         return apiBaseURL

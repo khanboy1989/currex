@@ -12,6 +12,7 @@ import Foundation
 internal enum PlistFiles {
   private static let _document = PlistDocument(path: "Info.plist")
 
+  internal static let accessKey: String = _document["AccessKey"]
   internal static let apiBaseURL: String = _document["ApiBaseURL"]
   internal static let cfBundleDevelopmentRegion: String = _document["CFBundleDevelopmentRegion"]
   internal static let cfBundleExecutable: String = _document["CFBundleExecutable"]

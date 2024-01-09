@@ -33,6 +33,7 @@ class CurrencyListViewController: BaseViewController {
             newValue.delegate = self
             newValue.dataSource = self
             newValue.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 34))
+            newValue.keyboardDismissMode = .onDrag
         }
     }
     

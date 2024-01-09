@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 public enum DataTransferError:Error{
     case noResponse
     case parsing(Error)

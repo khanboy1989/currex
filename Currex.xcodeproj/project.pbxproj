@@ -1040,6 +1040,7 @@
 		7B543D4B25AB44780098C384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ACCESS_KEY = c846702fc34d3601d52ea2a0e808c36b;
 				API_BASE_URL = "https://api.exchangeratesapi.io/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1060,6 +1061,7 @@
 		7B543D4C25AB44780098C384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ACCESS_KEY = c846702fc34d3601d52ea2a0e808c36b;
 				API_BASE_URL = "https://api.exchangeratesapi.io/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
