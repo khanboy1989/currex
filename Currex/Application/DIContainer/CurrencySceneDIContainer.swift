@@ -16,7 +16,8 @@ final class CurrencySceneDIContainer{
     }
     
     private let dependencies: Dependencies
-    private let baseCurrency:String = Constants.baseCurrency
+    private let baseCurrency:String = Constants.baseEURCurrency.lowercased()
+    
     //MARK: - Initialization
     init(dependecies:Dependencies){
         self.dependencies = dependecies

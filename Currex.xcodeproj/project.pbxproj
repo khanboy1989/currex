@@ -1041,7 +1041,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACCESS_KEY = c846702fc34d3601d52ea2a0e808c36b;
-				API_BASE_URL = "https://api.exchangeratesapi.io/";
+				API_BASE_URL = "http://api.exchangeratesapi.io/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1062,7 +1062,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ACCESS_KEY = c846702fc34d3601d52ea2a0e808c36b;
-				API_BASE_URL = "https://api.exchangeratesapi.io/";
+				API_BASE_URL = "http://api.exchangeratesapi.io/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

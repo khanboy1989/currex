@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 final class DefaultCurrenciesRepository{
     
     private let dataTransferService: DataTransferService
